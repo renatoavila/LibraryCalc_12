@@ -31,6 +31,14 @@
         int Subtracao(int x, int y);
 
         /// <summary>
+        /// Subitração de dois números
+        /// </summary>
+        /// <param name="x">primeiro número</param>
+        /// <param name="y">segundo número</param>
+        /// <returns>Subitração de dois números</returns>
+        int Subtracao(int x, int y, int z);
+
+        /// <summary>
         /// Multiplicacao de dois números
         /// </summary>
         /// <param name="x">primeiro número</param>

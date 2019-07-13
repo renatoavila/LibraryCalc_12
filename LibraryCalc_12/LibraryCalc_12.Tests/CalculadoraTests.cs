@@ -45,6 +45,19 @@ namespace LibraryCalc_12.Tests
         }
 
         [Theory]
+        [InlineData(1, 2, 7)]
+        [InlineData(20, 55, 4)]
+        [InlineData(-50, 0, 9)]
+        [InlineData(-4, 2, 8)]
+        [InlineData(4, 2, 2)]
+        public void SubtracaoTresSucesso(int x, int y, int z)
+        {
+            var calculadora = new Calculadora();
+            var resultado = calculadora.Subtracao(x, y, z);
+            Assert.True((x - y - z) == resultado);
+        }
+
+        [Theory]
         [InlineData(1, 2)]
         [InlineData(20, 55)]
         [InlineData(-50, 0)]
